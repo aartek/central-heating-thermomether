@@ -1,7 +1,3 @@
-/**
-   An example showing how to put ESP8266 into Deep-sleep mode
-*/
-
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 #include <OneWire.h>
@@ -101,7 +97,7 @@ void setup() {
   http.end();
 
   Serial.println("Going into deep sleep for 20 seconds");
-  ESP.deepSleep(20e6); // 20e6 is 20 microseconds
+  ESP.deepSleep(20e6); // 20e6 is 20 seconds
 }
 
 void loop() {
